@@ -44,84 +44,96 @@ An AI-powered system that generates **university-level exam question papers** us
 - **PDF:** FPDF  
 - **DOCX:** python-docx  
 
----
-
 ## 📁 Project Structure
 
-
+```
 exam_generator/
-│
 ├── app.py
 ├── config.py
 │
 ├── rag/
-│ └── rag_engine.py
+│   └── rag_engine.py
 │
 ├── agent/
-│ └── planner.py
+│   └── planner.py
 │
 ├── llm/
-│ └── generator.py
+│   └── generator.py
 │
 ├── tools/
-│ ├── pdf_tool.py
-│ └── docx_tool.py
+│   ├── pdf_tool.py
+│   └── docx_tool.py
 │
 ├── .env
 └── requirements.txt
-
-
+```
 ---
-
 ## ⚙️ Installation & Setup
 
-### 1. Clone repository
-
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/ai-exam-generator.git
 cd ai-exam-generator
+```
 
-2. Create virtual environment
+### 2. Create a Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
+```
 
-3. Install dependencies
+### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-4. Add API Key
-Create a .env file:
-
+### 4. Add Your API Key
+Create a `.env` file in the root directory:
 GROQ_API_KEY=your_api_key_here
 
-5. Run application
+### 5. Run the Application
+```bash
 streamlit run app.py
+```
 
-🎯 Usage
+---
 
-Enter subject and syllabus
-Select difficulty and marks
-Provide exam details (year, time, duration)
-Click Generate Question Paper
-Download as PDF or DOCX
+## 🎯 Usage
 
-🏆 Key Highlights
-Combines RAG + Agent + LLM
-Real-world education use case
-Clean and scalable architecture
-Interactive UI with modern design
+1. Enter **subject** and **syllabus**
+2. Select **difficulty level** and **total marks**
+3. Provide exam details *(year, time, duration)*
+4. Click **Generate Question Paper**
+5. **Download** as PDF or DOCX
 
-🔒 Security Note
-.env file is excluded from GitHub
-API keys are kept secure
+---
 
-👩‍💻 Author
+## 🏆 Key Highlights
 
-Priyadharshini V
+- 🤖 Combines **RAG + Agent + LLM** for intelligent generation
+- 📚 Real-world **education use case**
+- 🏗️ Clean and **scalable architecture**
+- 🎨 Interactive UI with **modern design**
+
+---
+
+## 🔒 Security Note
+
+- `.env` file is excluded from version control via `.gitignore`
+- API keys are never exposed in the codebase
+
+---
+
+## 👩‍💻 Author
+
+**Priyadharshini V**  
 Computer Science Engineering Student
 
-⭐ Future Improvements
+---
 
-📊 Question difficulty tuning slider
-🧠 Save & history of generated papers
-🌐 Deploy as web app
-🔊 Voice-based input
+## ⭐ Future Improvements
+
+- 📊 Question difficulty tuning slider
+- 🧠 Save & history of generated papers
+- 🌐 Deploy as a web app
+- 🔊 Voice-based input
